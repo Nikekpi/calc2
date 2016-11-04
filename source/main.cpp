@@ -1,12 +1,15 @@
 #include <iostream>
-#include "parser.h"
 #include <vector>
+
+#include "parser.h"
+#include "calc.h"
 
 int main()
 {
 	std::cout << "Hello";
     Parser parser("calc.txt");
     auto words = parser.GetResult();
-    print(words.size());
+	double result = Calc(words);
+	print(result);
     return 0;
 }

@@ -9,11 +9,7 @@
 
 #include "word.h"
 
-template <class T>
-void print(const T i_s)
-{
-	std::cout << "\n" << i_s << "\n";
-}
+
 
 class Parser
 {

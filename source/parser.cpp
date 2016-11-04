@@ -20,11 +20,9 @@ std::vector<Word> Parser::GetResult()
 
 void Parser::_ReadText()
 {
-	print(1);
     if (!m_file_stream)
         return;
 
-    print(2);
     std::string row_text;
 
     do {
@@ -106,7 +104,7 @@ void Parser::_Parse()
         			is_value = false;
         		}
         	}
-        	i += value.length();
+        	i += value.length()-1;
         	double d_value;
         	try
         	{
